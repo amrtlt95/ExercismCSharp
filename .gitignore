@@ -9,6 +9,18 @@
 *.user
 *.userosscache
 *.sln.docstates
+# Test files
+*.test.cs
+
+# Documentation files
+HELP.md
+HINTS.md
+
+# Specific directories
+obj/
+bin/
+.vs/
+.exercism/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
