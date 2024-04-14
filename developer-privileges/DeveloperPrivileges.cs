@@ -4,24 +4,24 @@ using System.Collections.Generic;
 public class Authenticator
 {
 
-    public Identity Admin { get; } = new()
+    public Identity Admin { get; } = new Identity
     {
         Email = "admin@ex.ism",
-        FacialFeatures = new () { EyeColor = "green", PhiltrumWidth = 0.9m },
+        FacialFeatures = new FacialFeatures { EyeColor = "green", PhiltrumWidth = 0.9m },
         NameAndAddress = new List<string>() { "Chanakya", "Mumbai", "India" }
     };
     public IDictionary<string, Identity> Developers { get; } = new Dictionary<string, Identity>
     {
-        ["Bertrand"] = new ()
+        ["Bertrand"] = new Identity
         {
             Email = "bert@ex.ism",
-            FacialFeatures = new () { EyeColor = "blue", PhiltrumWidth = 0.8m },
+            FacialFeatures = new FacialFeatures { EyeColor = "blue", PhiltrumWidth = 0.8m },
             NameAndAddress = new List<string> { "Bertrand", "Paris", "France" }
         },
-        ["Anders"] = new ()
+        ["Anders"] = new Identity
         {
             Email = "anders@ex.ism",
-            FacialFeatures = new () { EyeColor = "brown", PhiltrumWidth = 0.85m },
+            FacialFeatures = new FacialFeatures { EyeColor = "brown", PhiltrumWidth = 0.85m },
             NameAndAddress = new List<string> { "Anders", "Redmond", "USA" }
         }
     };
